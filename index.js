@@ -14,6 +14,10 @@ app.get("/contact", (req, res) => {
   res.send("<h1>Contact me through LinkedIn!</h1>");
 });
 
+app.get("/career", (req, res) => {
+  res.send("<h1>!</h1>");
+});
+
 app.listen(port, () => {
   console.log(`server Running on port ${port}`);
 });
