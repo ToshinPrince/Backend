@@ -6,16 +6,20 @@ app.get("/", (req, res) => {
   res.send("<h1>Hello</h1>");
 });
 
-app.get("/about", (req, res) => {
-  res.send("<h1>I am a developer!</h1>");
+app.post("/register", (req, res) => {
+  res.sendStatus(201);
 });
 
-app.get("/contact", (req, res) => {
-  res.send("<h1>Contact me through LinkedIn!</h1>");
+app.put("/user/togo", (req, res) => {
+  res.sendStatus(200);
 });
 
-app.get("/career", (req, res) => {
-  res.send("<h1>!</h1>");
+app.patch("/user/togo", (req, res) => {
+  res.sendStatus(200);
+});
+
+app.delete("/user/togo", (req, res) => {
+  res.sendStatus(200);
 });
 
 app.listen(port, () => {
