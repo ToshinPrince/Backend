@@ -23,5 +23,5 @@ app.delete("/user/togo", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`server Running on port ${port}`);
+  console.log(`server Runningg on port ${port}`);
 });
