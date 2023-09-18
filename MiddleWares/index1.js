@@ -7,6 +7,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
 
+// There are Four Types of Middleware
+// Pre-Processing, Logging, Authentication, Error
+// body-parser is Pre-Processing Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
