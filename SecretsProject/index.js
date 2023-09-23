@@ -12,6 +12,9 @@ const port = 3000;
 var userIsAuthorised = false;
 
 app.use(bodyParser.urlencoded({ extended: true }));
+//you can also do above code like this, then to dont need to import body-parser because body parser is incorporated into express.
+//code will function same
+//app.use(express.urlencoded({ extended: true }));
 
 function passwordCheck(req, res, next) {
   const password = req.body["password"];
